@@ -1,0 +1,356 @@
+--- !ruby/object:Library
+name: Foreign Literature
+books:
+- !ruby/object:Book
+  title: Robinson Crusoe
+  author: Daniel Defoe
+- !ruby/object:Book
+  title: Gulliver’s Travels
+  author: Jonathan Swift
+- !ruby/object:Book
+  title: David Copperfield
+  author: Charles Dickens
+- !ruby/object:Book
+  title: Alice’s Adventures in Wonderland
+  author: Lewis Carroll
+- !ruby/object:Book
+  title: The Adventures of Huckleberry Finn
+  author: Mark Twain
+- !ruby/object:Book
+  title: The Picture of Dorian Gray
+  author: Oscar Wilde
+- !ruby/object:Book
+  title: Dracula
+  author: Bram Stoker
+- !ruby/object:Book
+  title: The Call of the Wild
+  author: Jack London
+- !ruby/object:Book
+  title: The Great Gatsby
+  author: F Scott Fitzgerald
+- !ruby/object:Book
+  title: The Sun Also Rises
+  author: Ernest Hemingway
+- !ruby/object:Book
+  title: Sister Carrie
+  author: Theodore Dreiser
+- !ruby/object:Book
+  title: Kim
+  author: Rudyard Kipling
+- !ruby/object:Book
+  title: Under the Volcano
+  author: Malcolm Lowry
+- !ruby/object:Book
+  title: The Heat of the Day
+  author: Elizabeth Bowen
+- !ruby/object:Book
+  title: Nineteen Eighty-Four
+  author: George Orwell
+- !ruby/object:Book
+  title: The Adventures of Augie March
+  author: Saul Bellow
+- !ruby/object:Book
+  title: Lord of the Flies
+  author: William Golding
+- !ruby/object:Book
+  title: Lolita
+  author: Vladimir Nabokov
+- !ruby/object:Book
+  title: To Kill a Mockingbird
+  author: Harper Lee
+- !ruby/object:Book
+  title: A Clockwork Orange
+  author: Anthony Burges
+- !ruby/object:Book
+  title: An Artist of the Floating World
+  author: Kazuo Ishiguro
+- !ruby/object:Book
+  title: Underworld
+  author: Don DeLillo
+- !ruby/object:Book
+  title: True History of the Kelly Gang
+  author: Peter Carey
+- !ruby/object:Book
+  title: Midnight’s Children
+  author: Salman Rushdie
+- !ruby/object:Book
+  title: Song of Solomon
+  author: Toni Morrison
+readers:
+- !ruby/object:Reader
+  name: Maria Anders
+  email: maria_anders@gmail.com
+  city: Berlin
+  street: Obere Str.
+  house: '57'
+- !ruby/object:Reader
+  name: Ana Trujillo
+  email: ana_trujillo@yahoo.com
+  city: México D.F.
+  street: Avda. de la Constitución
+  house: '2222'
+- !ruby/object:Reader
+  name: Antonio Moreno
+  email: antonio_moreno
+  city: México D.F.
+  street: Mataderos
+  house: '2312'
+- !ruby/object:Reader
+  name: Thomas Hardy
+  email: thomas_hardy@gmail.com
+  city: London
+  street: Hanover Sq.
+  house: '120'
+- !ruby/object:Reader
+  name: Christina Berglund
+  email: christina_berglund@yahoo.com
+  city: Luleå
+  street: Berguvsvägen
+  house: '8'
+- !ruby/object:Reader
+  name: Hanna Moos
+  email: hanna_moos@gmail.com
+  city: Mannheim
+  street: Forsterstr.
+  house: '57'
+- !ruby/object:Reader
+  name: Frédérique Citeaux
+  email: fred_cit@yahoo.com
+  city: Strasbourg
+  street: place Kléber
+  house: '24'
+- !ruby/object:Reader
+  name: Laurence Lebihans
+  email: laurence_leb@gmail.com
+  city: Marseille
+  street: rue des Bouchers
+  house: '12'
+- !ruby/object:Reader
+  name: Elizabeth Lincoln
+  email: eliza_lin@gmail.com
+  city: Tsawassen
+  street: Tsawassen Blvd.
+  house: '23'
+- !ruby/object:Reader
+  name: Patricio Simpson
+  email: patricio_simp@yahoo.com
+  city: Buenos Aires
+  street: Cerrito
+  house: '333'
+- !ruby/object:Reader
+  name: Pedro Afonso
+  email: pedro_afonso@gmail.com
+  city: São Paulo
+  street: Av. dos Lusíadas
+  house: '23'
+- !ruby/object:Reader
+  name: Paolo Accorti
+  email: paolo_accorti@yahoo.com
+  city: Torino
+  street: Via Monte Bianco
+  house: '34'
+- !ruby/object:Reader
+  name: Eduardo Saavedra
+  email: eduardo_s@yahoo.com
+  city: Barcelona
+  street: Rambla de Cataluña
+  house: '23'
+- !ruby/object:Reader
+  name: André Fonseca
+  email: a_fonseca@gmail.com
+  city: Campinas
+  street: Av. Brasil
+  house: '442'
+- !ruby/object:Reader
+  name: Carlos Hernández
+  email: carlos_hernandez@gmail.com
+  city: San Cristóbal
+  street: Carrera 22 con Ave. Carlos Soublette
+  house: 8-35
+- !ruby/object:Reader
+  name: Jaime Yorres
+  email: yorres_j@yahoo.com
+  city: San Francisco
+  street: Polk St. Suite
+  house: '87'
+- !ruby/object:Reader
+  name: Giovanni Rovelli
+  email: rovelli_g@yahoo.com
+  city: Bergamo
+  street: Via Ludovico il Moro
+  house: '22'
+- !ruby/object:Reader
+  name: Catherine Dewey
+  email: catherine_d@gmail.com
+  city: Bruxelles
+  street: Rue Joseph-Bens
+  house: '532'
+- !ruby/object:Reader
+  name: Bernardo Batista
+  email: bernardo_batista@yahoo.com
+  city: Rio de Janeiro
+  street: Rua da Panificadora
+  house: '12'
+- !ruby/object:Reader
+  name: Miguel Angel Paolino
+  email: miguel_ap@yahoo.com
+  city: México D.F.
+  street: Avda. Azteca
+  house: '123'
+authors:
+- !ruby/object:Author
+  name: Daniel Defoe
+  biography: Here comes biography of Daniel Defoe...
+- !ruby/object:Author
+  name: Jonathan Swift
+  biography: Here comes biography of Jonathan Swift...
+- !ruby/object:Author
+  name: Charles Dickens
+  biography: Here comes biography of Charles Dickens...
+- !ruby/object:Author
+  name: Lewis Carroll
+  biography: Here comes biography of Lewis Carroll...
+- !ruby/object:Author
+  name: Mark Twain
+  biography: Here comes biography of Mark Twain...
+- !ruby/object:Author
+  name: Oscar Wilde
+  biography: Here comes biography of Oscar Wilde...
+- !ruby/object:Author
+  name: Bram Stoker
+  biography: Here comes biography of Bram Stoker...
+- !ruby/object:Author
+  name: Jack London
+  biography: Here comes biography of Jack London...
+- !ruby/object:Author
+  name: F Scott Fitzgerald
+  biography: Here comes biography of F Scott Fitzgerald...
+- !ruby/object:Author
+  name: Ernest Hemingway
+  biography: Here comes biography of Ernest Hemingway...
+- !ruby/object:Author
+  name: Theodore Dreiser
+  biography: Here comes biography of Theodore Dreiser...
+- !ruby/object:Author
+  name: Rudyard Kipling
+  biography: Here comes biography of Rudyard Kipling...
+- !ruby/object:Author
+  name: Malcolm Lowry
+  biography: Here comes biography of Malcolm Lowry...
+- !ruby/object:Author
+  name: Elizabeth Bowen
+  biography: Here comes biography of Elizabeth Bowen...
+- !ruby/object:Author
+  name: George Orwell
+  biography: Here comes biography of George Orwell...
+- !ruby/object:Author
+  name: Saul Bellow
+  biography: Here comes biography of Saul Bellow...
+- !ruby/object:Author
+  name: William Golding
+  biography: Here comes biography of William Golding...
+- !ruby/object:Author
+  name: Vladimir Nabokov
+  biography: Here comes biography of Vladimir Nabokov...
+- !ruby/object:Author
+  name: Harper Lee
+  biography: Here comes biography of Harper Lee...
+- !ruby/object:Author
+  name: Anthony Burges
+  biography: Here comes biography of Anthony Burges...
+- !ruby/object:Author
+  name: Kazuo Ishiguro
+  biography: Here comes biography of Kazuo Ishiguro...
+- !ruby/object:Author
+  name: Don DeLillo
+  biography: Here comes biography of Don DeLillo...
+- !ruby/object:Author
+  name: Peter Carey
+  biography: Here comes biography of Peter Carey...
+- !ruby/object:Author
+  name: Salman Rushdie
+  biography: Here comes biography of Salman Rushdie...
+- !ruby/object:Author
+  name: Toni Morrison
+  biography: Here comes biography of Toni Morrison...
+orders:
+- !ruby/object:Order
+  book: The Picture of Dorian Gray
+  reader: André Fonseca
+  date: 2017-04-05
+- !ruby/object:Order
+  book: Midnight’s Children
+  reader: Elizabeth Lincoln
+  date: 2017-03-31
+- !ruby/object:Order
+  book: Kim
+  reader: Carlos Hernández
+  date: 2017-04-10
+- !ruby/object:Order
+  book: Lolita
+  reader: Bernardo Batista
+  date: 2017-03-30
+- !ruby/object:Order
+  book: To Kill a Mockingbird
+  reader: Miguel Angel Paolino
+  date: 2017-03-29
+- !ruby/object:Order
+  book: Underworld
+  reader: Jaime Yorres
+  date: 2017-04-02
+- !ruby/object:Order
+  book: Robinson Crusoe
+  reader: Antonio Moreno
+  date: 2017-04-14
+- !ruby/object:Order
+  book: The Heat of the Day
+  reader: Frédérique Citeaux
+  date: 2017-03-27
+- !ruby/object:Order
+  book: The Adventures of Huckleberry Finn
+  reader: Christina Berglund
+  date: 2017-04-07
+- !ruby/object:Order
+  book: The Sun Also Rises
+  reader: Hanna Moos
+  date: 2017-04-06
+- !ruby/object:Order
+  book: The Sun Also Rises
+  reader: Christina Berglund
+  date: 2017-03-24
+- !ruby/object:Order
+  book: Alice’s Adventures in Wonderland
+  reader: Miguel Angel Paolino
+  date: 2017-03-24
+- !ruby/object:Order
+  book: The Heat of the Day
+  reader: Paolo Accorti
+  date: 2017-04-08
+- !ruby/object:Order
+  book: Gulliver’s Travels
+  reader: Paolo Accorti
+  date: 2017-03-25
+- !ruby/object:Order
+  book: The Sun Also Rises
+  reader: André Fonseca
+  date: 2017-04-05
+- !ruby/object:Order
+  book: The Sun Also Rises
+  reader: Jaime Yorres
+  date: 2017-04-08
+- !ruby/object:Order
+  book: Underworld
+  reader: André Fonseca
+  date: 2017-03-24
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Catherine Dewey
+  date: 2017-04-03
+- !ruby/object:Order
+  book: The Picture of Dorian Gray
+  reader: Jaime Yorres
+  date: 2017-04-15
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Elizabeth Lincoln
+  date: 2017-04-05

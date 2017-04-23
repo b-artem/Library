@@ -1,0 +1,20 @@
+Maria Anders, maria_anders@gmail.com,	Berlin, Obere Str., 57
+Ana Trujillo, ana_trujillo@yahoo.com,	México D.F., Avda. de la Constitución, 2222
+Antonio Moreno, antonio_moreno,	México D.F., Mataderos, 2312
+Thomas Hardy, thomas_hardy@gmail.com,		London, Hanover Sq., 120
+Christina Berglund, christina_berglund@yahoo.com,	Luleå, Berguvsvägen, 8
+Hanna Moos, hanna_moos@gmail.com,	Mannheim, Forsterstr., 57
+Frédérique Citeaux, fred_cit@yahoo.com,	Strasbourg, place Kléber, 24
+Laurence Lebihans, laurence_leb@gmail.com, Marseille, rue des Bouchers,   12
+Elizabeth Lincoln, eliza_lin@gmail.com,   Tsawassen, Tsawassen Blvd.,  23
+Patricio Simpson, patricio_simp@yahoo.com, Buenos Aires, Cerrito, 333
+Pedro Afonso, pedro_afonso@gmail.com, São Paulo, Av. dos Lusíadas, 23
+Paolo Accorti, paolo_accorti@yahoo.com, Torino, Via Monte Bianco, 34
+Eduardo Saavedra, eduardo_s@yahoo.com, Barcelona,	Rambla de Cataluña, 23
+André Fonseca, a_fonseca@gmail.com,	Campinas, Av. Brasil, 442
+Carlos Hernández, carlos_hernandez@gmail.com, San Cristóbal, Carrera 22 con Ave. Carlos Soublette, 8-35
+Jaime Yorres, yorres_j@yahoo.com, San Francisco,  Polk St. Suite, 87
+Giovanni Rovelli, rovelli_g@yahoo.com, Bergamo, Via Ludovico il Moro, 22
+Catherine Dewey, catherine_d@gmail.com,	Bruxelles, Rue Joseph-Bens, 532
+Bernardo Batista, bernardo_batista@yahoo.com,	Rio de Janeiro, Rua da Panificadora, 12
+Miguel Angel Paolino, miguel_ap@yahoo.com, México D.F.,	Avda. Azteca, 123
