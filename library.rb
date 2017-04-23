@@ -37,10 +37,11 @@ class Author
 end
 
 class Library
+  attr_accessor
 
-  def initialize(name)
-    @name = name
-  end
+  # def initialize(name)
+  #   @name = name
+  # end
 
   def loaded?
     @books && @authors && @readers
@@ -51,10 +52,14 @@ class Library
       using any other methods'
   end
 
-  def get_data(file)
-    puts "Reading library data from file #{file}"
-    @books = YAML.load_file(file)
+  def no_orders
+    puts "There is no orders in the library yet. You may create them using
+    generate_orders(orders_amount) method"
   end
+
+  # def get_data(file)
+  #   puts "Reading library data from file #{file}"
+  # end
 
   def save_data(file)
     puts "Saving library data to file #{file}  ..."
@@ -72,7 +77,7 @@ class Library
         date = Date.today - rand(1..30)
         @orders << Order.new(@books[book_index].title, @readers[reader_index].name, date)
       end
-      puts "Generating #{orders_amount} orders..."
+      puts "Generating #{orders_amount} random orders..."
     else
       not_loaded
     end
@@ -85,8 +90,7 @@ class Library
       max = readers.values.max
       readers.select { |_, value| value == max }
     else
-      puts "There is no orders in the library yet. You may create them using
-            generate_orders(orders_amount) method"
+      no_orders
     end
   end
 
@@ -102,24 +106,28 @@ class Library
       end
       top_books
     else
-      puts "There is no orders in the library yet. You may create them using
-      generate_orders(orders_amount) method"
+      no_orders
     end
   end
 
   def top_books_readers(top_amount = 1)
     if loaded?
       readers = []
-      top_books(top_amount).each_key do |key|
-        (readers << key) unless readers.include?(key)
+      top_books(top_amount).each_key do |title|
+        @orders.each do |order|
+          if order.book == title && !readers.include?(order.reader)
+            readers << order.reader
+          end
+        end
       end
-      readers
+      readers.count
     else
       not_loaded
     end
   end
 
-  # Utils for reading data from TXT files ######################################
+  # Additional methods for reading data from TXT files (no need to use here)##
+
   def get_books_data(file)
     @books = []
     f = File.open(file)
