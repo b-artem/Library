@@ -46,10 +46,14 @@ class Library
     @books && @authors && @readers
   end
 
+  def not_loaded
+    puts 'You should load library data using get_data(file) method before
+      using any other methods'
+  end
+
   def get_data(file)
     puts "Reading library data from file #{file}"
     @books = YAML.load_file(file)
-    # puts file.closed?
   end
 
   def save_data(file)
@@ -70,8 +74,7 @@ class Library
       end
       puts "Generating #{orders_amount} orders..."
     else
-      puts 'You should load library data using get_data(file) method before
-      generating orders'
+      not_loaded
     end
   end
 
@@ -101,6 +104,18 @@ class Library
     else
       puts "There is no orders in the library yet. You may create them using
       generate_orders(orders_amount) method"
+    end
+  end
+
+  def top_books_readers(top_amount = 1)
+    if loaded?
+      readers = []
+      top_books(top_amount).each_key do |key|
+        (readers << key) unless readers.include?(key)
+      end
+      readers
+    else
+      not_loaded
     end
   end
 

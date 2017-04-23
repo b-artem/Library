@@ -14,5 +14,6 @@ library.generate_orders(100)
 
 puts library.top_reader
 puts library.top_books(3)
+puts top_books_readers(1)
 
 library.save_data(path + '/library_saved.yml')
