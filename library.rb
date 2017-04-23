@@ -42,6 +42,10 @@ class Library
     @name = name
   end
 
+  def loaded?
+    @books && @authors && @readers
+  end
+
   def get_data(file)
     puts "Reading library data from file #{file}"
     @books = YAML.load_file(file)
@@ -56,14 +60,19 @@ class Library
   end
 
   def generate_orders(orders_amount)
-    @orders = []
-    orders_amount.times do
-      book_index = rand(0...@books.count)
-      reader_index = rand(0...@readers.count)
-      date = Date.today - rand(1..30)
-      @orders << Order.new(@books[book_index].title, @readers[reader_index].name, date)
+    if loaded?
+      @orders = []
+      orders_amount.times do
+        book_index = rand(0...@books.count)
+        reader_index = rand(0...@readers.count)
+        date = Date.today - rand(1..30)
+        @orders << Order.new(@books[book_index].title, @readers[reader_index].name, date)
+      end
+      puts "Generating #{orders_amount} orders..."
+    else
+      puts 'You should load library data using get_data(file) method before
+      generating orders'
     end
-    puts "Generating #{orders_amount} orders..."
   end
 
   def top_reader
@@ -71,32 +80,29 @@ class Library
       readers = Hash.new(0)
       @orders.each { |order| readers[order.reader] += 1 }
       max = readers.values.max
-      top_reader = readers.select { |_, value| value == max }
-      puts top_reader
+      readers.select { |_, value| value == max }
     else
       puts "There is no orders in the library yet. You may create them using
             generate_orders(orders_amount) method"
     end
   end
 
-  def top_book
+  def top_books(top_amount = 1)
     if @books
       books = Hash.new(0)
+      top_books = Hash.new(0)
       @orders.each { |order| books[order.book] += 1 }
-      max = books.values.max
-      top_book = books.select { |_, value| value == max }
+      top_amount.times do
+        max = books.values.max
+        top_books.merge!(books.select { |_, value| value == max })
+        books.delete_if { |_, value| value == max }
+      end
+      top_books
     else
       puts "There is no orders in the library yet. You may create them using
       generate_orders(orders_amount) method"
     end
   end
-
-  # def top3_books
-  #   top3_books = []
-  #   3.times
-  #   top_book
-
-  # end
 
   # Utils for reading data from TXT files ######################################
   def get_books_data(file)

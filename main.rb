@@ -12,7 +12,7 @@ library.get_authors_data(path + '/authors.txt')
 
 library.generate_orders(100)
 
-library.top_reader
-puts library.top_book
+puts library.top_reader
+puts library.top_books(3)
 
 library.save_data(path + '/library_saved.yml')
