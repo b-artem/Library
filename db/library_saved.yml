@@ -275,82 +275,402 @@ authors:
   biography: Here comes biography of Toni Morrison...
 orders:
 - !ruby/object:Order
-  book: The Picture of Dorian Gray
-  reader: André Fonseca
-  date: 2017-04-05
+  book: An Artist of the Floating World
+  reader: Maria Anders
+  date: 2017-04-17
+- !ruby/object:Order
+  book: Robinson Crusoe
+  reader: Catherine Dewey
+  date: 2017-03-29
+- !ruby/object:Order
+  book: Gulliver’s Travels
+  reader: Laurence Lebihans
+  date: 2017-04-14
+- !ruby/object:Order
+  book: David Copperfield
+  reader: Catherine Dewey
+  date: 2017-04-12
+- !ruby/object:Order
+  book: Song of Solomon
+  reader: Paolo Accorti
+  date: 2017-03-24
+- !ruby/object:Order
+  book: Sister Carrie
+  reader: Elizabeth Lincoln
+  date: 2017-03-26
 - !ruby/object:Order
   book: Midnight’s Children
+  reader: Elizabeth Lincoln
+  date: 2017-04-11
+- !ruby/object:Order
+  book: Nineteen Eighty-Four
+  reader: Antonio Moreno
+  date: 2017-03-25
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Hanna Moos
+  date: 2017-04-09
+- !ruby/object:Order
+  book: The Sun Also Rises
+  reader: Catherine Dewey
+  date: 2017-04-11
+- !ruby/object:Order
+  book: Song of Solomon
+  reader: Carlos Hernández
+  date: 2017-04-12
+- !ruby/object:Order
+  book: True History of the Kelly Gang
+  reader: Antonio Moreno
+  date: 2017-04-03
+- !ruby/object:Order
+  book: Gulliver’s Travels
+  reader: Catherine Dewey
+  date: 2017-03-26
+- !ruby/object:Order
+  book: Underworld
+  reader: André Fonseca
+  date: 2017-04-09
+- !ruby/object:Order
+  book: The Heat of the Day
+  reader: Jaime Yorres
+  date: 2017-04-16
+- !ruby/object:Order
+  book: The Call of the Wild
+  reader: Jaime Yorres
+  date: 2017-03-26
+- !ruby/object:Order
+  book: True History of the Kelly Gang
+  reader: Eduardo Saavedra
+  date: 2017-04-08
+- !ruby/object:Order
+  book: Kim
+  reader: Giovanni Rovelli
+  date: 2017-04-14
+- !ruby/object:Order
+  book: Lord of the Flies
+  reader: Catherine Dewey
+  date: 2017-04-03
+- !ruby/object:Order
+  book: True History of the Kelly Gang
+  reader: Paolo Accorti
+  date: 2017-04-18
+- !ruby/object:Order
+  book: A Clockwork Orange
+  reader: Miguel Angel Paolino
+  date: 2017-04-16
+- !ruby/object:Order
+  book: The Call of the Wild
+  reader: Catherine Dewey
+  date: 2017-04-16
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Hanna Moos
+  date: 2017-04-12
+- !ruby/object:Order
+  book: Lord of the Flies
+  reader: Eduardo Saavedra
+  date: 2017-04-22
+- !ruby/object:Order
+  book: The Adventures of Huckleberry Finn
+  reader: Giovanni Rovelli
+  date: 2017-04-05
+- !ruby/object:Order
+  book: Lord of the Flies
+  reader: Miguel Angel Paolino
+  date: 2017-04-22
+- !ruby/object:Order
+  book: Kim
+  reader: Paolo Accorti
+  date: 2017-04-17
+- !ruby/object:Order
+  book: Alice’s Adventures in Wonderland
+  reader: Elizabeth Lincoln
+  date: 2017-04-08
+- !ruby/object:Order
+  book: The Heat of the Day
+  reader: Ana Trujillo
+  date: 2017-03-30
+- !ruby/object:Order
+  book: Midnight’s Children
+  reader: Carlos Hernández
+  date: 2017-04-09
+- !ruby/object:Order
+  book: The Adventures of Huckleberry Finn
+  reader: Hanna Moos
+  date: 2017-04-05
+- !ruby/object:Order
+  book: True History of the Kelly Gang
+  reader: Carlos Hernández
+  date: 2017-04-18
+- !ruby/object:Order
+  book: The Adventures of Augie March
+  reader: Giovanni Rovelli
+  date: 2017-04-18
+- !ruby/object:Order
+  book: Under the Volcano
+  reader: Maria Anders
+  date: 2017-04-11
+- !ruby/object:Order
+  book: Gulliver’s Travels
+  reader: Miguel Angel Paolino
+  date: 2017-04-19
+- !ruby/object:Order
+  book: Nineteen Eighty-Four
+  reader: Patricio Simpson
+  date: 2017-04-11
+- !ruby/object:Order
+  book: The Adventures of Augie March
+  reader: Bernardo Batista
+  date: 2017-04-16
+- !ruby/object:Order
+  book: Sister Carrie
+  reader: Paolo Accorti
+  date: 2017-04-01
+- !ruby/object:Order
+  book: Underworld
+  reader: Pedro Afonso
+  date: 2017-03-30
+- !ruby/object:Order
+  book: A Clockwork Orange
+  reader: Eduardo Saavedra
+  date: 2017-04-21
+- !ruby/object:Order
+  book: Midnight’s Children
+  reader: Maria Anders
+  date: 2017-03-25
+- !ruby/object:Order
+  book: Gulliver’s Travels
+  reader: Thomas Hardy
+  date: 2017-04-10
+- !ruby/object:Order
+  book: Underworld
+  reader: Bernardo Batista
+  date: 2017-03-29
+- !ruby/object:Order
+  book: Dracula
+  reader: Elizabeth Lincoln
+  date: 2017-04-20
+- !ruby/object:Order
+  book: Kim
+  reader: Frédérique Citeaux
+  date: 2017-04-06
+- !ruby/object:Order
+  book: Midnight’s Children
+  reader: Thomas Hardy
+  date: 2017-03-28
+- !ruby/object:Order
+  book: To Kill a Mockingbird
+  reader: Maria Anders
+  date: 2017-04-02
+- !ruby/object:Order
+  book: Under the Volcano
+  reader: Elizabeth Lincoln
+  date: 2017-03-31
+- !ruby/object:Order
+  book: The Call of the Wild
+  reader: Christina Berglund
+  date: 2017-03-26
+- !ruby/object:Order
+  book: Song of Solomon
+  reader: André Fonseca
+  date: 2017-04-22
+- !ruby/object:Order
+  book: Sister Carrie
+  reader: Miguel Angel Paolino
+  date: 2017-03-28
+- !ruby/object:Order
+  book: Robinson Crusoe
+  reader: Catherine Dewey
+  date: 2017-04-19
+- !ruby/object:Order
+  book: The Great Gatsby
+  reader: Eduardo Saavedra
+  date: 2017-03-29
+- !ruby/object:Order
+  book: David Copperfield
+  reader: Giovanni Rovelli
+  date: 2017-04-22
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: André Fonseca
+  date: 2017-04-13
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Giovanni Rovelli
+  date: 2017-04-06
+- !ruby/object:Order
+  book: The Picture of Dorian Gray
+  reader: Patricio Simpson
+  date: 2017-04-09
+- !ruby/object:Order
+  book: The Call of the Wild
+  reader: André Fonseca
+  date: 2017-03-24
+- !ruby/object:Order
+  book: To Kill a Mockingbird
+  reader: Elizabeth Lincoln
+  date: 2017-03-27
+- !ruby/object:Order
+  book: The Call of the Wild
+  reader: Laurence Lebihans
+  date: 2017-03-31
+- !ruby/object:Order
+  book: Nineteen Eighty-Four
+  reader: Christina Berglund
+  date: 2017-03-26
+- !ruby/object:Order
+  book: The Heat of the Day
+  reader: André Fonseca
+  date: 2017-04-19
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Laurence Lebihans
+  date: 2017-04-12
+- !ruby/object:Order
+  book: The Call of the Wild
+  reader: Patricio Simpson
+  date: 2017-04-11
+- !ruby/object:Order
+  book: The Sun Also Rises
+  reader: Hanna Moos
+  date: 2017-04-19
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Antonio Moreno
+  date: 2017-04-11
+- !ruby/object:Order
+  book: The Call of the Wild
+  reader: Maria Anders
+  date: 2017-03-24
+- !ruby/object:Order
+  book: Kim
+  reader: Thomas Hardy
+  date: 2017-04-11
+- !ruby/object:Order
+  book: Alice’s Adventures in Wonderland
+  reader: Laurence Lebihans
+  date: 2017-04-14
+- !ruby/object:Order
+  book: David Copperfield
+  reader: Miguel Angel Paolino
+  date: 2017-04-08
+- !ruby/object:Order
+  book: Song of Solomon
+  reader: Giovanni Rovelli
+  date: 2017-03-26
+- !ruby/object:Order
+  book: Underworld
+  reader: Giovanni Rovelli
+  date: 2017-04-15
+- !ruby/object:Order
+  book: True History of the Kelly Gang
+  reader: Pedro Afonso
+  date: 2017-04-18
+- !ruby/object:Order
+  book: Gulliver’s Travels
+  reader: Frédérique Citeaux
+  date: 2017-04-20
+- !ruby/object:Order
+  book: Nineteen Eighty-Four
+  reader: Maria Anders
+  date: 2017-03-26
+- !ruby/object:Order
+  book: Nineteen Eighty-Four
+  reader: Elizabeth Lincoln
+  date: 2017-04-15
+- !ruby/object:Order
+  book: Lolita
+  reader: Pedro Afonso
+  date: 2017-04-21
+- !ruby/object:Order
+  book: Sister Carrie
+  reader: Jaime Yorres
+  date: 2017-04-20
+- !ruby/object:Order
+  book: Sister Carrie
+  reader: André Fonseca
+  date: 2017-04-16
+- !ruby/object:Order
+  book: True History of the Kelly Gang
+  reader: Jaime Yorres
+  date: 2017-04-12
+- !ruby/object:Order
+  book: The Adventures of Augie March
+  reader: Thomas Hardy
+  date: 2017-04-06
+- !ruby/object:Order
+  book: The Heat of the Day
+  reader: Pedro Afonso
+  date: 2017-04-05
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Frédérique Citeaux
+  date: 2017-04-14
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Maria Anders
+  date: 2017-04-04
+- !ruby/object:Order
+  book: An Artist of the Floating World
+  reader: Maria Anders
+  date: 2017-04-07
+- !ruby/object:Order
+  book: Midnight’s Children
+  reader: Maria Anders
+  date: 2017-04-15
+- !ruby/object:Order
+  book: Kim
+  reader: Antonio Moreno
+  date: 2017-04-12
+- !ruby/object:Order
+  book: Lolita
+  reader: Thomas Hardy
+  date: 2017-04-05
+- !ruby/object:Order
+  book: The Heat of the Day
   reader: Elizabeth Lincoln
   date: 2017-03-31
 - !ruby/object:Order
   book: Kim
-  reader: Carlos Hernández
-  date: 2017-04-10
+  reader: Elizabeth Lincoln
+  date: 2017-04-01
 - !ruby/object:Order
-  book: Lolita
-  reader: Bernardo Batista
-  date: 2017-03-30
-- !ruby/object:Order
-  book: To Kill a Mockingbird
-  reader: Miguel Angel Paolino
-  date: 2017-03-29
+  book: Lord of the Flies
+  reader: Ana Trujillo
+  date: 2017-03-24
 - !ruby/object:Order
   book: Underworld
-  reader: Jaime Yorres
-  date: 2017-04-02
-- !ruby/object:Order
-  book: Robinson Crusoe
-  reader: Antonio Moreno
-  date: 2017-04-14
-- !ruby/object:Order
-  book: The Heat of the Day
-  reader: Frédérique Citeaux
-  date: 2017-03-27
-- !ruby/object:Order
-  book: The Adventures of Huckleberry Finn
-  reader: Christina Berglund
-  date: 2017-04-07
-- !ruby/object:Order
-  book: The Sun Also Rises
-  reader: Hanna Moos
-  date: 2017-04-06
-- !ruby/object:Order
-  book: The Sun Also Rises
-  reader: Christina Berglund
-  date: 2017-03-24
-- !ruby/object:Order
-  book: Alice’s Adventures in Wonderland
-  reader: Miguel Angel Paolino
-  date: 2017-03-24
-- !ruby/object:Order
-  book: The Heat of the Day
-  reader: Paolo Accorti
-  date: 2017-04-08
-- !ruby/object:Order
-  book: Gulliver’s Travels
-  reader: Paolo Accorti
-  date: 2017-03-25
-- !ruby/object:Order
-  book: The Sun Also Rises
-  reader: André Fonseca
-  date: 2017-04-05
-- !ruby/object:Order
-  book: The Sun Also Rises
-  reader: Jaime Yorres
-  date: 2017-04-08
-- !ruby/object:Order
-  book: Underworld
-  reader: André Fonseca
-  date: 2017-03-24
-- !ruby/object:Order
-  book: An Artist of the Floating World
-  reader: Catherine Dewey
+  reader: Thomas Hardy
   date: 2017-04-03
 - !ruby/object:Order
-  book: The Picture of Dorian Gray
+  book: Under the Volcano
   reader: Jaime Yorres
-  date: 2017-04-15
+  date: 2017-04-11
+- !ruby/object:Order
+  book: Robinson Crusoe
+  reader: Catherine Dewey
+  date: 2017-04-02
+- !ruby/object:Order
+  book: Song of Solomon
+  reader: Jaime Yorres
+  date: 2017-04-16
+- !ruby/object:Order
+  book: The Picture of Dorian Gray
+  reader: Paolo Accorti
+  date: 2017-03-31
 - !ruby/object:Order
   book: An Artist of the Floating World
-  reader: Elizabeth Lincoln
-  date: 2017-04-05
+  reader: Frédérique Citeaux
+  date: 2017-04-06
+- !ruby/object:Order
+  book: A Clockwork Orange
+  reader: Catherine Dewey
+  date: 2017-03-26
+- !ruby/object:Order
+  book: Underworld
+  reader: Thomas Hardy
+  date: 2017-03-29
+- !ruby/object:Order
+  book: Robinson Crusoe
+  reader: Miguel Angel Paolino
+  date: 2017-04-12
