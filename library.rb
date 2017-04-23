@@ -37,7 +37,6 @@ class Author
 end
 
 class Library
-  attr_accessor
 
   # def initialize(name)
   #   @name = name
