@@ -69,6 +69,7 @@ class Library
 
   def generate_orders(orders_amount)
     if loaded?
+      puts "Generating #{orders_amount} random orders..."
       @orders = []
       orders_amount.times do
         book_index = rand(0...@books.count)
@@ -76,7 +77,6 @@ class Library
         date = Date.today - rand(1..30)
         @orders << Order.new(@books[book_index].title, @readers[reader_index].name, date)
       end
-      puts "Generating #{orders_amount} random orders..."
     else
       not_loaded
     end
@@ -127,35 +127,35 @@ class Library
 
   # Additional methods for reading data from TXT files (no need to use here)##
 
-  def get_books_data(file)
-    @books = []
-    f = File.open(file)
-    f.each do |line|
-      params = line.split(',').map(&:strip)
-      @books << Book.new(params[0], params[1])
-    end
-    f.close
-  end
+  # def get_books_data(file)
+  #   @books = []
+  #   f = File.open(file)
+  #   f.each do |line|
+  #     params = line.split(',').map(&:strip)
+  #     @books << Book.new(params[0], params[1])
+  #   end
+  #   f.close
+  # end
 
-  def get_readers_data(file)
-    @readers = []
-    f = File.open(file)
-    f.each do |line|
-      params = line.split(',').map(&:strip)
-      @readers << Reader.new(params[0], params[1], params[2], params[3], params[4])
-    end
-    f.close
-  end
+  # def get_readers_data(file)
+  #   @readers = []
+  #   f = File.open(file)
+  #   f.each do |line|
+  #     params = line.split(',').map(&:strip)
+  #     @readers << Reader.new(params[0], params[1], params[2], params[3], params[4])
+  #   end
+  #   f.close
+  # end
 
-  def get_authors_data(file)
-    @authors = []
-    f = File.open(file)
-    f.each do |line|
-      params = line.split(',').map(&:strip)
-      @authors << Author.new(params[1], params[0])
-    end
-    f.close
-  end
+  # def get_authors_data(file)
+  #   @authors = []
+  #   f = File.open(file)
+  #   f.each do |line|
+  #     params = line.split(',').map(&:strip)
+  #     @authors << Author.new(params[1], params[0])
+  #   end
+  #   f.close
+  # end
   ###########################################################################
 
 end
