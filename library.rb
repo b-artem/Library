@@ -38,6 +38,8 @@ end
 
 class Library
 
+  attr_reader :books, :authors, :readers, :orders
+
   # def initialize(name)
   #   @name = name
   # end
@@ -48,7 +50,7 @@ class Library
 
   def not_loaded
     puts 'You should load library data using get_data(file) method before
-      using any other methods'
+    using any other methods'
   end
 
   def no_orders
@@ -82,28 +84,14 @@ class Library
     end
   end
 
-  def top_reader
-    if @orders
-      readers = Hash.new(0)
-      @orders.each { |order| readers[order.reader] += 1 }
-      max = readers.values.max
-      readers.select { |_, value| value == max }
-    else
-      no_orders
-    end
-  end
-
-  def top_books(top_amount = 1)
-    if @books
-      books = Hash.new(0)
-      top_books = Hash.new(0)
-      @orders.each { |order| books[order.book] += 1 }
-      top_amount.times do
-        max = books.values.max
-        top_books.merge!(books.select { |_, value| value == max })
-        books.delete_if { |_, value| value == max }
-      end
-      top_books
+  def top(objects, top_amount = 1)
+    if objects
+      obj_hash = Hash.new(0)
+      entity = objects[0].class.to_s.downcase
+      @orders.each { |order| obj_hash[order.send(entity)] += 1 }
+      maxs = obj_hash.values.uniq.max(top_amount)
+      top = obj_hash.select { |_, v| maxs.include?(v) }
+      top.sort_by { |_, v| -v }.to_h
     else
       no_orders
     end
@@ -112,11 +100,10 @@ class Library
   def top_books_readers(top_amount = 1)
     if loaded?
       readers = []
-      top_books(top_amount).each_key do |title|
-        @orders.each do |order|
-          if order.book == title && !readers.include?(order.reader)
-            readers << order.reader
-          end
+      top_books = top(@books, top_amount).keys
+      @orders.each do |order|
+        if top_books.include?(order.book) && !readers.include?(order.reader)
+          readers << order.reader
         end
       end
       readers.count
