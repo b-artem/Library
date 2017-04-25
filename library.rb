@@ -44,6 +44,9 @@ class Library
   #   @name = name
   # end
 
+  def hooks
+  end
+
   def loaded?
     @books && @authors && @readers
   end
@@ -88,10 +91,14 @@ class Library
     if objects
       obj_hash = Hash.new(0)
       entity = objects[0].class.to_s.downcase
-      @orders.each { |order| obj_hash[order.send(entity)] += 1 }
-      maxs = obj_hash.values.uniq.max(top_amount)
-      top = obj_hash.select { |_, v| maxs.include?(v) }
-      top.sort_by { |_, v| -v }.to_h
+      if @orders[0].respond_to?(entity)
+        @orders.each { |order| obj_hash[order.public_send(entity)] += 1 }
+        maxs = obj_hash.values.uniq.max(top_amount)
+        top = obj_hash.select { |_, v| maxs.include?(v) }
+        top.sort_by { |_, v| -v }.to_h
+      else
+        puts "There is no such method #{entity} for Order instance"
+      end
     else
       no_orders
     end
