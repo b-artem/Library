@@ -44,9 +44,6 @@ class Library
   #   @name = name
   # end
 
-  def hooks
-  end
-
   def loaded?
     @books && @authors && @readers
   end
