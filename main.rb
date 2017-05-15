@@ -1,7 +1,7 @@
 require './library.rb'
 
 data_path = './db'
-library = Library.new
+# library = Library.new
 library = Library.get_data(data_path + '/library_initial_data.yml')
 library.generate_orders(50)
 
