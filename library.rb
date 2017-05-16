@@ -1,20 +1,23 @@
 $LOAD_PATH << '.'
 
 require 'yaml'
+require 'library_utils.rb'
 require 'book.rb'
 require 'author.rb'
 require 'reader.rb'
 require 'order.rb'
-require 'library_utils.rb'
 
 class Library
 
   include LibraryUtils
-  attr_reader :books, :authors, :readers, :orders
+  attr_accessor :books, :authors, :readers, :orders
 
-  # def initialize(name)
-  #   @name = name
-  # end
+  def initialize(books = nil, authors = nil, readers = nil, orders = nil)
+    @books = books
+    @authors = authors
+    @readers = readers
+    @orders = orders
+  end
 
   def loaded?
     @books && @authors && @readers
@@ -32,8 +35,17 @@ class Library
     exit
   end
 
-  def self.get_data(file)
-    YAML.load_file(file)
+  def get_data(file)
+    begin
+      library = YAML.load_file(file)
+    rescue
+      puts "Couldn't open file #{file}"
+      return
+    end
+    @books = library.books
+    @authors = library.authors
+    @readers = library.readers
+    @orders = library.orders
   end
 
   def save_data(file)
@@ -41,17 +53,16 @@ class Library
     f = File.new(file, 'w')
     f.write(to_yaml)
     f.close
+  rescue => exception
+    puts "Couldn't save data to file. Exception: #{exception}"
   end
 
   def top(entity, top_amount = 1)
     return not_loaded unless loaded?
     return no_orders unless @orders
     if @orders[0].respond_to?(entity)
-      obj_hash = Hash.new(0)
-      @orders.each { |order| obj_hash[order.public_send(entity)] += 1 }
-      maxs = obj_hash.values.uniq.max(top_amount)
-      top = obj_hash.select { |_, v| maxs.include?(v) }
-      top.sort_by { |_, v| -v }.to_h
+      groupped = @orders.group_by(&entity).sort_by { |_, val| -val.size }
+      groupped.max_by(top_amount) { |_, val| val.size }.to_h.keys
     else
       puts "There is no such method #{entity} for Order instance"
     end
@@ -60,14 +71,9 @@ class Library
   def top_books_readers(top_amount = 1)
     return not_loaded unless loaded?
     return no_orders unless @orders
-    readers = []
-    top_books = top(@books, top_amount).keys
-    @orders.each do |order|
-      if top_books.include?(order.book) && !readers.include?(order.reader)
-        readers << order.reader
-      end
-    end
-    readers.count
+    top_books = top(:book, top_amount)
+    orders = @orders.select { |order| top_books.include? order.book }
+    orders.map(&:reader).uniq.count
   end
 
 end
