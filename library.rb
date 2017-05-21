@@ -29,6 +29,12 @@ class Library
     exit
   end
 
+  def library_ready?
+    return not_loaded unless loaded?
+    return no_orders unless @orders
+    true
+  end
+
   def no_orders
     puts "There are no orders in the library yet. You may create them using
     generate_orders(orders_amount) method"
@@ -58,8 +64,7 @@ class Library
   end
 
   def top(entity, top_amount = 1)
-    return not_loaded unless loaded?
-    return no_orders unless @orders
+    return unless library_ready?
     if @orders[0].respond_to?(entity)
       groupped = @orders.group_by(&entity).sort_by { |_, val| -val.size }
       groupped.max_by(top_amount) { |_, val| val.size }.to_h.keys
@@ -69,8 +74,7 @@ class Library
   end
 
   def top_books_readers(top_amount = 1)
-    return not_loaded unless loaded?
-    return no_orders unless @orders
+    return unless library_ready?
     top_books = top(:book, top_amount)
     orders = @orders.select { |order| top_books.include? order.book }
     orders.map(&:reader).uniq.count
